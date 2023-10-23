@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Quote()">Show Quote in console</button>
+    <p id="qote">Talk is cheap Show me the code</p>
+</body>
+</html>
+<script>
+    let print = document.getElementById("qote");
+    function Quote()
+    {
+        console.log(print.innerText);
+    }
+</script>
