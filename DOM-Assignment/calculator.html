@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <input type="number" id = "Num1" placeholder="Enter 1st number">
+    <input type="number" id = "Num2"placeholder="Enter 2nd number">
+    <button onclick="Addition()" id = "add"> Add</button>
+    <button onclick="Subtraction()" id = "sub">Subtract</button>
+    <button onclick="Multiplication()" id = "multi">Multiply</button>
+    <button onclick="Division()" id = "Divi">Divide</button>
+</body>
+</html>
+<script> 
+    function Addition(){
+        let inp1 = parseFloat(document.getElementById("Num1").value)
+        let inp2 = parseFloat(document.getElementById("Num2").value)
+        alert(inp1 + inp2)
+    }
+    function Subtraction(){
+        let inp1 = parseFloat(document.getElementById("Num1").value)
+        let inp2 = parseFloat(document.getElementById("Num2").value)
+        alert(inp1 - inp2)
+    }
+    function Multiplication(){
+        let inp1 = parseFloat(document.getElementById("Num1").value)
+        let inp2 = (document.getElementById("Num2").value)
+        alert(inp1 * inp2)
+    }
+    function Division(){
+        let inp1 = parseFloat(document.getElementById("Num1").value)
+        let inp2 = parseFloat(document.getElementById("Num2").value)
+        if (inp2 === 0) 
+        {
+            alert("Error : Invalid Input(number cannot be devided by 0)");
+        } 
+        else 
+        {
+            alert(inp1 / inp2)
+        }
+    }
+</script>
